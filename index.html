@@ -9,42 +9,42 @@
 <body>
     <a href="https://github.com/jigitaremi/frontend-calculator.git">My Repository Link</a>
     <div class="container">
-        
-            <table class="calculator">
-                <tr>
-                    <td colspan="3">
-                        <input type="text" id="result">
-                    </td>                
-                </tr>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="result">
+            </div>
+            <div class="btns">
+                <table>
+                    <tr class="row-1">
+                        <td><input type="button" value="7" class="button" onclick="display('7')"></td>
+                        <td><input type="button" value="8" class="button" onclick="display('8')"></td>
+                        <td><input type="button" value="9" class="button" onclick="display('9')"></td>
+                        <td><input type="button" value="/" class="operator" onclick="display('/')"></td>
+                    </tr>
                 
-                <tr class="row-1">
-                    <td><input type="button" value="7" class="button" onClick="display('7')"></td>
-                    <td><input type="button" value="8" class="button" onclick="display('8')"></td>
-                    <td><input type="button" value="9" class="button" onclick="display('9')"></td>
-                    <td><input type="button" value="/" class="operator" onclick="display('/')"></td>
-                </tr>
-            
-                <tr class="row-2">
-                    <td><input type="button" value="4" class="button" onclick="display('4')"></td>
-                    <td><input type="button" value="5" class="button" onclick="display('5')"></td>
-                    <td><input type="button" value="6" class="button" onclick="display('6')"></td>
-                    <td><input type="button" value="*" class="operator" onclick="display('*')"></td>
-                </tr>
-            
-                <tr class="row-3">
-                    <td><input type="button" value="3" class="button" onclick="display('3')"></td>
-                    <td><input type="button" value="2" class="button" onclick="display('2')"></td>
-                    <td><input type="button" value="1" class="button" onclick="display('1')"></td>
-                    <td><input type="button" value="-" class="operator" onclick="display('-')"></td>
-                </tr>
-            
-                <tr class="row-4">
-                    <td><input type="button" value="0" class="button" onclick="display('0')"></td>
-                    <td><input type="button" value="." class="button" onclick="display('.')"></td>
-                    <td><input type="button" value="+" class="operator" onclick="display('+')"></td>
-                    <td><input type="button" value="=" class="equal" onclick="solve()"></td>
-                </tr>
-            </table>
+                    <tr class="row-2">
+                        <td><input type="button" value="4" class="button" onclick="display('4')"></td>
+                        <td><input type="button" value="5" class="button" onclick="display('5')"></td>
+                        <td><input type="button" value="6" class="button" onclick="display('6')"></td>
+                        <td><input type="button" value="*" class="operator" onclick="display('*')"></td>
+                    </tr>
+                
+                    <tr class="row-3">
+                        <td><input type="button" value="3" class="button" onclick="display('3')"></td>
+                        <td><input type="button" value="2" class="button" onclick="display('2')"></td>
+                        <td><input type="button" value="1" class="button" onclick="display('1')"></td>
+                        <td><input type="button" value="-" class="operator" onclick="display('-')"></td>
+                    </tr>
+                
+                    <tr class="row-4">
+                        <td><input type="button" value="0" class="button" onclick="display('0')"></td>
+                        <td><input type="button" value="." class="button" onclick="display('.')"></td>
+                        <td><input type="button" value="+" class="operator" onclick="display('+')"></td>
+                        <td><input type="button" value="=" class="equal" onclick="solve()"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
     <script src="./app.js"></script>
 </body>
